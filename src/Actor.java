@@ -14,6 +14,10 @@ public class Actor {
         return false;
     }
 
-    public
+    public int moviesStarredIn(SimpleMovie s){
+        int count = 0;
+        for(String name: s.getActors()) if (this.name.equals(name)) count++;
+        return count;
+    }
 
 }
